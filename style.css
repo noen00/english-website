@@ -1,0 +1,10 @@
+.l{ 
+    color: red; text-align: center; font-size: 4rem;
+}
+.link{ 
+    border: solid green ;
+    border-right: 3px;
+    border-radius: 360px;
+
+    
+}
