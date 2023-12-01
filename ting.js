@@ -4,7 +4,17 @@ const tall= document.getElementById("tall")
 const menu= document.getElementById("menu")
 const dark=document.getElementById("dark")
 
+let keepDark = localStorage.getItem("on")
 
+window.onload=function(){
+    if(localStorage.getItem("on") == "l"){
+        var element=document.body
+        element.classList.toggle("dark-mode");
+    }
+
+
+
+}
 
 
 
@@ -24,9 +34,16 @@ menu.addEventListener("change",function(){
 
 dark.addEventListener("click",function(){
 
-
-    var element=document.body
-    element.classList.toggle("dark-mode");
+    if(localStorage.getItem("on") == "l"){
+        var element=document.body
+        element.classList.toggle("dark-mode");
+        localStorage.setItem("on", "i")
+    }
+    else{
+        var element=document.body
+        element.classList.toggle("dark-mode");
+        localStorage.setItem("on", "l")
+    }
 
 })
 
