@@ -3,6 +3,7 @@ const klikk= document.getElementById("klikk")
 const tall= document.getElementById("tall")
 const menu= document.getElementById("menu")
 const dark=document.getElementById("dark")
+const font=document.getElementById("font")
 
 let keepDark = localStorage.getItem("on")
 
@@ -46,5 +47,8 @@ dark.addEventListener("click",function(){
     }
 
 })
+
+
+
 
 
