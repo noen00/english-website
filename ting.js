@@ -4,8 +4,11 @@ const tall= document.getElementById("tall")
 const menu= document.getElementById("menu")
 const dark=document.getElementById("dark")
 const font=document.getElementById("font")
-
+const write=document.getElementById("write")
+const stuff=document.getElementById("stuff")
+const food=document.getElementById("food")
 let keepDark = localStorage.getItem("on")
+
 
 window.onload=function(){
     if(localStorage.getItem("on") == "l"){
@@ -16,6 +19,15 @@ window.onload=function(){
 
 
 }
+write.addEventListener("click",function(){
+    if(food.value=="password"){
+        window.location.href="dark.html"
+    
+    
+    }
+   
+    
+    })
 
 
 
